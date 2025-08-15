@@ -1,0 +1,30 @@
+#container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+}
+
+main h1, h3 {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    background-color: black;
+    height: 3px;
+    border: none;
+}
+
+thead {
+    border: 1px solid black;
+}
+
+tbody {
+    border: 1px solid black;
+}
