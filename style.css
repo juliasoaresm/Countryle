@@ -1,16 +1,18 @@
 #container {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 15% 70% 15%;
     min-height: 100vh;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    align-items: center;
+#sidebar-esquerda {
+    background-color: #eee;
 }
 
-main h1, h3 {
+#sidebar-direita {
+    background-color: #eee;
+}
+
+h1, h3 {
     display: flex;
     justify-content: center;
 }
@@ -21,10 +23,76 @@ hr {
     border: none;
 }
 
-thead {
-    border: 1px solid black;
+body {
+    font-family: Arial, sans-serif;
+    /* padding: 20px; */
+    background-color: #f0f0f0;
 }
 
-tbody {
-    border: 1px solid black;
+main {
+    max-width: 100%;
+    grid-column: 2;
+    align-self: start;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+#mensagem div {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.correto {
+    background-color: green;
+    color: white;
+}
+
+.incorreto {
+    background-color: red;
+    color: white;
+}
+
+.pop20 {
+    background-color: green;
+    color: white;
+}
+
+.pop40 {
+    background-color: yellow;
+    color: white;
+}
+
+.pop50 {
+    background-color: red;
+    color: white;
+}
+
+.acertou {
+    font-weight: bold;
+    color: green;
+    background-color: #d5ffcf;
+    padding: 20px;
+}
+
+.errou {
+    font-weight: bold;
+    color: red;
+    background-color: #ffb7b7;
+    padding: 20px;
+}
+
+.erro {
+    font-weight: bold;
+    color: red;
+    padding: 20px;
 }
